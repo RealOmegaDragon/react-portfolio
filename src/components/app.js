@@ -16,7 +16,7 @@ export default class App extends Component {
       <div className='app'>
         <Router>
           <div>
-          <h1>Braxton Newhall Portfolio</h1>
+            <h1>Braxton Newhall Portfolio</h1>
             {moment().format('MMMM Do YYYY, h:mm:ss a')}
             <NavigationContainer />
 
@@ -27,7 +27,6 @@ export default class App extends Component {
               <Route path="/blog" component={Blog} />
               <Route exact path="/portfolio/:slug" component={PortfolioDetail} />
               <Route component={NoMatch} />
-
             </Switch>
           </div>
         </Router>
